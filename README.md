@@ -8,22 +8,20 @@
 
 ## Table of Contents
 
- - [1. Introduction🎯](https://github.com/tarrelateto10/Air_vehicle_CNN/blob/main/README.md#1-introduction)
- - [2. Data📑](https://github.com/tarrelateto10/Air_vehicle_CNN#2-data)
- - [3. Network architecture📦](https://github.com/tarrelateto10/Air_vehicle_CNN#3-network-architecture)
- - [4. Training🔮](https://github.com/tarrelateto10/Air_vehicle_CNN#4-training)
- - [5. Results📈](https://github.com/tarrelateto10/Air_vehicle_CNN#5-results)
- - [6. Discussion💭](https://github.com/tarrelateto10/Air_vehicle_CNN/blob/main/README.md#6-discussion)
- - [7. Conclusion📝](https://github.com/tarrelateto10/Air_vehicle_CNN/blob/main/README.md#7-conclusion)
- - [8. References🌐](https://github.com/tarrelateto10/Air_vehicle_CNN/blob/main/README.md#8-references)
- - [Citing](https://github.com/tarrelateto10/Air_vehicle_CNN/blob/main/README.md#citing)
-
- - [🖇️End Credit ](https://github.com/tarrelateto10/Air_vehicle_CNN/blob/main/README.md#%EF%B8%8Fend-credit)
+ - [1. Introduction🎯](./README.md#1-introduction)
+ - [2. Data📑](./README.md#2-data)
+ - [3. Network architecture📦](./README.md#3-network-architecture)
+ - [4. Training🔮](./README.md#4-training)
+ - [5. Results📈](./README.md#5-results)
+ - [6. Discussion💭](./README.md#6-discussion)
+ - [7. Conclusion📝](./README.md#7-conclusion)
+ - [8. References🌐](./README.md#8-references)
+ - [🖇️End Credit ](./README.md#%EF%B8%8Fend-credit)
 
 ## 1. Introduction🎯 
 - This project aims to test **4 CNN pre-training models** (`VGG16`, `ResNet50V2`, `InceptionV3`, `MobileNet`) on the ImageNet dataset and fine-tune it to classify 3 types of air vehicles ✈️ (`Rocket`, `Passenger-plane`, `Helicopter`, `Fighter-jet`, `Drone`) which is our custom image dataset that were never trained on. 
 - Then, we will compare performance of **4 CNN pre-training models** without transfer learning and with transfer learning (Fine-tuning).
-- Finally, we use [**`Grad-CAM`**](https://github.com/tarrelateto10/DADS7202_HW02-CNN_MNLP_Group/blob/main/README.md#-visualizing-what-cnn-learned-with-grad-cam4) technique to debug the model and gain more insight into what a trained CNN did.
+- Finally, we use [**`Grad-CAM`**](./README.md#-visualizing-what-cnn-learned-with-grad-cam4) technique to debug the model and gain more insight into what a trained CNN did.
 
 ## 2. Data📑
 There are many Air Vehicles<sup>0</sup> varieties in Thailand and each one of them has different characteristics. Let’s find out interesting facts about different varieties of air vehicle before training and finetuning models.
@@ -41,6 +39,7 @@ There are many Air Vehicles<sup>0</sup> varieties in Thailand and each one of th
   <img src="./dataset/helicopter.jpg" style="width:120px;"/>
 
 ✈️ **4. Fighter-jet
+
   <img src="./dataset/fighter-jet.jpg" style="width:120px;"/>
 
 ✈️ **5. Drone
@@ -100,14 +99,16 @@ In this experiment, we have selected 4 Pre-training Models for fine-tuning with 
 #### Network Architecture of Pre-training model 
 - To compare Network architecture of Pre-training model **`without Fine-tuning`**  VS **`with Fine-tuning`**
 - Remark: Based on our dataset and our experiment scope
-<img src="https://github.com/tarrelateto10/Air_vehicle_CNN/blob/main/images/Network_Architechture.png" style="width:900px;"/>
+
+<img src="./images/Network_Architechture.png" style="width:900px;"/>
 
 
 ## 4. Training🔮
 
 - From the experiment, We fine-tune each pre-training model with Hyperparameter more than 50 times to find the best model's performance with highest accuracy, less loss and not over-fit.
 - Our training strategy is...
-<img src="https://github.com/tarrelateto10/Air_vehicle_CNN/blob/main/images/Network_Architechture.png" style="width:900px;"/>
+
+<img src="./images/Network_Architechture.png" style="width:900px;"/>
 
 
 ## 5. Results📈
@@ -119,15 +120,16 @@ In this experiment, we have selected 4 Pre-training Models for fine-tuning with 
 We pre-train the model with initial random weights in the first round and more 2 rounds without random seed to calculate mean±SD of accuracy and loss on test set as the average of the model performance
 In each round, accuracy and loss of test sets are not significantly different. That proves the model is good fit.
 
-<img src="https://github.com/tarrelateto10/Air_vehicle_CNN/blob/main/images/Performance1.png" style="width:500px;"/>
+<img src="./images/Performance1.png" style="width:500px;"/>
 
 #### Accuracy and Loss on Train vs Validation sets
 
-<img src="https://github.com/tarrelateto10/Air_vehicle_CNN/blob/main/images/acc_and_loss_1.png" style="width:700px;"/>
-<img src="https://github.com/tarrelateto10/Air_vehicle_CNN/blob/main/images/acc_and_loss_2.png" style="width:700px;"/>
+<img src="./images/acc_and_loss_1.png" style="width:700px;"/>
+<img src="./images/acc_and_loss_2.png" style="width:700px;"/>
 
-- To compare the highest accuracy on test set of each Pre-training models under the same conditions and the same seeds,
-<img src="https://github.com/tarrelateto10/Air_vehicle_CNN/blob/main/images/Performance2.png" style="width:500px;"/>
+- To compare the highest accuracy on test set of each Pre-training models under the same conditions and the same seeds
+
+<img src="./images/Performance2.png" style="width:500px;"/>
 
 -	The best pre-trained model (No Fine-tune) among the selected models is **`🏆VGG`** with average accuracy rate at **`88.97%`** while after fine tuning it turns out that **`🏆VGG16`** becomes the best model with the highest accuracy on test set at **`90.66%`** from 88.97%
 -	After fine-tuning, all selected models show improvement on test accuracy average at **`🔼16.325%`**
@@ -136,7 +138,8 @@ In each round, accuracy and loss of test sets are not significantly different. T
 Time per inference step is the average of epoch.
 - **`GPU`**: Tesla T4 and RTX3060 TI
 - **`Epoch`**: 20
-<img src="https://github.com/tarrelateto10/Air_vehicle_CNN/blob/main/images/Runtime.png" style="width:550px;"/>
+
+<img src="./images/Runtime.png" style="width:550px;"/>
 
 ## 6. Discussion💭
 
