@@ -29,19 +29,23 @@
 There are many Air Vehicles<sup>0</sup> varieties in Thailand and each one of them has different characteristics. Let’s find out interesting facts about different varieties of air vehicle before training and finetuning models.
 
 ✈️ **1. Rocket
-  <img src="https://github.com/tarrelateto10/Air_vehicle_CNN/blob/main/dataset/rocket.jpg" style="width:120px;"/>
+
+  <img src="./dataset/rocket.jpg" style="width:120px;"/>
 
 ✈️ **2. Passenger-plane
-  <img src="https://github.com/tarrelateto10/Air_vehicle_CNN/blob/main/dataset/passenger-plane.jpg" style="width:120px;"/>
+
+  <img src="./dataset/passenger-plane.jpg" style="width:120px;"/>
 
 ✈️ **3. Helicopter
-  <img src="https://github.com/tarrelateto10/Air_vehicle_CNN/blob/main/dataset/helicopter.jpg" style="width:120px;"/>
+
+  <img src="./dataset/helicopter.jpg" style="width:120px;"/>
 
 ✈️ **4. Fighter-jet
-  <img src="https://github.com/tarrelateto10/Air_vehicle_CNN/blob/main/dataset/fighter-jet.jpg" style="width:120px;"/>
+  <img src="./dataset/fighter-jet.jpg" style="width:120px;"/>
 
 ✈️ **5. Drone
-  <img src="https://github.com/tarrelateto10/Air_vehicle_CNN/blob/main/dataset/drone.jpg" style="width:120px;"/>
+
+  <img src="./dataset/drone.jpg" style="width:120px;"/>
 
 - Total 2500 images (500 images per 1 class)
 
